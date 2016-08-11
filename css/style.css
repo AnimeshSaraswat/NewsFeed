@@ -1,29 +1,35 @@
 html,body {
-  background-color: #3F406E;
   margin: 0px;
 }
-.inline {
-  display: inline-block;
+div {
+  vertical-align: baseline;
 }
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
 .row {
   width: 100%;
-}
-row>div{
-  margin:1% !important;
+  overflow: auto;
 }
 
 [class*="col-"] {
-  max-height: 330px;
-  display: inline-block;
+  height: 360px;
+  float: left;
   position: relative;
   vertical-align: top;
-  margin-top: 10px;
   background-color: #5a5f89;
+  /*border: 3px solid #3F406E;*/
 }
+
 .img-responsive {
   height: 160px;
   width: 100%;
 }
+
 /*defining heading height*/
 .h1 {font-size: 36px; font-weight: bold;}
 .h2 {font-size: 30px; font-weight: bold;}
@@ -35,12 +41,13 @@ row>div{
 /*defining column's*/
 .col-1 {
   width: 8.33%;
+
 }
 .col-2 {
   width: 16.66%;
 }
 .col-3 {
-  width: 24.5%;
+  width: 25%;
 }
 .col-4 {
   width: 33.33%;
@@ -49,7 +56,7 @@ row>div{
   width: 41.66%;
 }
 .col-6 {
-  width: 49%;
+  width: 50%;
 }
 .col-7 {
   width: 58.33%;
@@ -70,74 +77,82 @@ row>div{
   width: 100%;
 }
 
-.header {
-  margin-bottom: 30px;
-}
-.navbar {
+.news-titles {
   width: 100%;
-  height: 35px;
-  background-color: #52547D;
+  height: 100%;
+  padding-bottom: 100px;
+  background-color: #3F406E;
+  overflow: auto;
 }
-
+.header {
+  background-color: #52557e;
+  overflow: auto;
+  margin-bottom: 5%;
+}
 .logo {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
   float: left;
+  padding: 10px;
+  color: #ffffff;
+  font-size: 14px;
+}
+.logo div {
+  margin-right: 5px;
 }
 .logo_large {
-  width: 10px;
   height: 10px;
+  width: 10px;
   background-color: #ffffff;
   border-radius: 50%;
-  margin: 0px 5px;
 }
 .logo_medium {
-  width: 6px;
   height: 6px;
+  width: 6px;
   background-color: #ffffff;
   border-radius: 50%;
-  margin: 0px 5px;
 }
 .logo_small {
-  width: 4px;
   height: 4px;
+  width: 4px;
   background-color: #ffffff;
   border-radius: 50%;
-  margin: 0px 5px;
 }
-.logo-text {
-  color: #ffffff;
-  margin-left: 10px;
-}
-.subscribe {
-  background-color: #595C88;
-  float: right;
+.subscription-box-wrapper {
   display: flex;
-  height: 100%;
   align-items: center;
   justify-content: center;
-  padding-left: 20px;
+  float: right;
+  background-color: #5A5F89;
 }
-.subscription-text > p {
-  margin: 0px;
+.subscription-box-wrapper input {
+  background: none;
+  border: none;
+  padding: 10px;
   color: #ffffff;
-  font-size: 12px;
-  padding-right: 100px;
 }
-.subscription-tick {
-  background-color: #A085CF;
-}
-.subscription-tick > p {
-  margin: 0px;
-  color : #ffffff;
+.subscription-box-wrapper button {
+  padding: 10px;
+  color: #ffffff;
+  background-color: #a88cd9;
+  border: none;
 }
 
 .container {
+  overflow: auto;
   width: 80%;
+  max-width: 1100px;
   margin: 0 auto;
-  margin-bottom: 30px
+}
+.img-responsive {
+  width: 100%;
+  height: 170px;
+}
+.mixpanel {
+  overflow: auto;
+  padding: 10% 5%;
+  color: #fff;
 }
 .office-hours {
   background: url(../img/office_hours.png) center no-repeat;
@@ -172,9 +187,11 @@ row>div{
   background-size: cover;
 }
 
-.text-area {
-  background-color: #5a5f89;
-  padding: 25px 25px 10px;
+.col-6 .text-area {
+  padding: 4%;
+}
+.col-3 .text-area {
+  padding: 7%;
 }
 .update-tag {
   font-size: 10px;
@@ -194,7 +211,6 @@ row>div{
 .ring-yellow {
   border: 2px solid #fbca18;
 }
-
 .news-heading {
   color: #fefefc;
   margin: 0px;
@@ -204,25 +220,21 @@ row>div{
   font-size: 11px;
   color: #f9feff;
 }
-.news-footer {
-  font-size: 12px;
+.text-area ul {
+  position: absolute;
+  bottom: 5px;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
 }
-.long-bar {
-  padding-top: 3px;
-}
-.icon-modified {
-  font-size: 15px;
-  margin-right: 1%;
-}
-.footer-content {
-  font-size: 12px;
-  margin-right: 5%;
+.text-area ul li {
+  display: inline-block;
   color: #afb4da;
+  font-size: 12px;
 }
-
-/*Mobile View*/
-@media only screen and (min-width: 320px) and (max-width: 720px) {
-  .mobile-view {
-    width: 100%;
-  }
+.text-area ul li:nth-child(2) {
+  margin-left: 10px;
+}
+.text-area ul li i {
+  margin-right: 5px;
 }
