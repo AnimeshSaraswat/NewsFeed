@@ -22,8 +22,8 @@ button:focus {
   position: relative;
   vertical-align: top;
   background-color: #5a5f89;
-  /*border: 3px solid #3F406E;*/
-  margin-bottom: 1%;
+  border: 3px solid #3F406E;
+  /*margin-bottom: 1%;*/
 }
 
 .img-responsive {
