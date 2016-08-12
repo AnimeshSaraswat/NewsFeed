@@ -1,3 +1,8 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 html,body {
   margin: 0px;
 }
@@ -23,7 +28,6 @@ button:focus {
   vertical-align: top;
   background-color: #5a5f89;
   border: 3px solid #3F406E;
-  /*margin-bottom: 1%;*/
 }
 
 .img-responsive {
