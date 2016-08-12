@@ -206,8 +206,8 @@ button:focus {
 .ring {
   display: inline-block;
   margin-right: 5px;
-  height: 2px;
-  width: 2px;
+  height: 7px;
+  width: 7px;
   border-radius: 50%;
 }
 .ring-voilet {
@@ -245,9 +245,16 @@ button:focus {
 }
 
 
-@media only screen and (min-width: 1280px) {
-  .container {
-    min-width: 1100px;
-    max-width: 1280px;
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .col-tab-6 {
+    width: 50%;
+  }
+  .col-tab-12 {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .mobile {
+    width: 100%;
   }
 }
