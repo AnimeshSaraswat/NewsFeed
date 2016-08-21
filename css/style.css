@@ -18,7 +18,7 @@ button:focus {
 
 .row {
   width: 100%;
-  overflow: auto;
+  overflow: hidden;
 }
 
 [class*="col-"] {
@@ -145,7 +145,6 @@ button:focus {
 }
 
 .container {
-  overflow: auto;
   width: 80%;
   max-width: 1100px;
   margin: 0 auto;
@@ -203,6 +202,17 @@ button:focus {
   color: #afb4da;
   margin-bottom: 5px;
 }
+.unique-block {
+  width: 62%;
+}
+.try {
+  border: none;
+  background-color: #a88cd9;
+  color: #fff;
+  font-weight: bold;
+  padding: 4%;
+  border-radius: 2px;
+}
 .ring {
   display: inline-block;
   margin-right: 5px;
@@ -215,6 +225,12 @@ button:focus {
 }
 .ring-yellow {
   border: 2px solid #fbca18;
+}
+.ring-white {
+  border: 2px solid #fff;
+}
+.ring-blue {
+  border: 2px solid #2CC3CC;
 }
 .news-heading {
   color: #fefefc;
@@ -253,8 +269,15 @@ button:focus {
     width: 100%;
   }
 }
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 767px) {
   .mobile {
     width: 100%;
+  }
+  .header .logo {
+    width: 100%;
+  }
+  .subscription-box-wrapper {
+    width: 100%;
+    margin: 0 auto;
   }
 }
