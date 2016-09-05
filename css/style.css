@@ -6,6 +6,9 @@
 html,body {
   margin: 0px;
 }
+body {
+  font-family: "Arial", sans-serif ;
+}
 div {
   vertical-align: baseline;
 }
@@ -262,11 +265,14 @@ button:focus {
 
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .col-tab-6 {
-    width: 50%;
+  .col-tab-8 {
+    width: 66.66%;
   }
-  .col-tab-12 {
-    width: 100%;
+  .col-tab-4 {
+    width: 33.33%;
+  }
+  .news-heading {
+    font-size: 20px;
   }
 }
 @media only screen and (max-width: 767px) {
